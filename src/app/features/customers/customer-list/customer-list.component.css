@@ -1,7 +1,13 @@
 table {
     width: 100%;
 }
+button {
+    margin: 5px;
+}
 
+#mogus {
+    display: none;
+}
 th.mat-sort-header-sorted {
     color: black;
 }

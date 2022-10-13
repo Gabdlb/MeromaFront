@@ -31,7 +31,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./customer-list.component.css']
 })
 export class CustomerListComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'nom', 'weight', 'symbol'];
+  displayedColumns: string[] = ['nom', 'weight', 'symbol','edit'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   @ViewChild(MatSort, { static: true })
@@ -46,8 +46,16 @@ export class CustomerListComponent implements OnInit {
   ngOnInit() {
     this.titleService.setTitle('angular-material-template - Customers');
     this.logger.log('Customers loaded');
-    this.notificationService.openSnackBar('Employes loaded');
+    // this.notificationService.openSnackBar('Employes loaded');
     this.dataSource.sort = this.sort;
 
   }
+
+  showMogus() {
+    // @ts-ignore
+    document.getElementById('mogus')
+        .style.display = "block";
+
+  }
+
 }

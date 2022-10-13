@@ -23,8 +23,8 @@ export class DashboardHomeComponent implements OnInit {
     this.titleService.setTitle('angular-material-template - Dashboard');
     this.logger.log('Dashboard loaded');
 
-    setTimeout(() => {
-      this.notificationService.openSnackBar('Bienvenue!');
-    });
+    // setTimeout(() => {
+    //   this.notificationService.openSnackBar('Bienvenue!');
+    // });
   }
 }
