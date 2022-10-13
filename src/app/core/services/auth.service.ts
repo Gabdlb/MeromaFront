@@ -49,11 +49,11 @@ export class AuthenticationService {
         return {
             token: 'aisdnaksjdn,axmnczm',
             isAdmin: true,
-            email: 'john.doe@gmail.com',
+            email: 'gab.dlb@gmail.com',
             id: '12312323232',
-            alias: 'john.doe@gmail.com'.split('@')[0],
+            alias: 'gab.dlb@gmail.com'.split('@')[0],
             expiration: moment().add(1, 'days').toDate(),
-            fullName: 'John Doe'
+            fullName: 'Gabriel de la Biche'
         };
     }
 

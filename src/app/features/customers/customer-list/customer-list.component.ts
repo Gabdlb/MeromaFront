@@ -6,23 +6,23 @@ import { Title } from '@angular/platform-browser';
 import { NotificationService } from 'src/app/core/services/notification.service';
 
 export interface PeriodicElement {
-  name: string;
+  nom: string;
   position: number;
   weight: number;
   symbol: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-  { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
-  { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
-  { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
-  { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
-  { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
-  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+  { position: 1, nom: 'Gabriel', weight: 2312, symbol: '17/01/2000' },
+  { position: 2, nom: 'Théophile', weight: 2501, symbol: '31/10/2003' },
+  { position: 3, nom: 'Jasmine', weight: 2679, symbol: '31/07/2007' },
+  { position: 4, nom: 'Inès', weight: 2239, symbol: '20/02/2014' },
+  { position: 5, nom: 'Julien', weight: 3386, symbol: '26/02/2016' },
+  { position: 6, nom: 'Hugo', weight: 2707, symbol: '03/01/2018' },
+  { position: 7, nom: 'Antoine', weight: 2702, symbol: '13/04/2018' },
+  { position: 8, nom: 'Juliette', weight: 2725, symbol: '05/09/2018' },
+  { position: 9, nom: 'Antoine', weight: 2220, symbol: '02/09/2019' },
+  { position: 10, nom: 'Erwan', weight: 2250, symbol: '28/04/2020' },
 ];
 
 @Component({
@@ -31,7 +31,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./customer-list.component.css']
 })
 export class CustomerListComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['position', 'nom', 'weight', 'symbol'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   @ViewChild(MatSort, { static: true })
