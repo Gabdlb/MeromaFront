@@ -20,7 +20,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   { position: 5, nom: 'Julien', weight: 3386, symbol: '26/02/2016' },
   { position: 6, nom: 'Hugo', weight: 2707, symbol: '03/01/2018' },
   { position: 7, nom: 'Antoine', weight: 2702, symbol: '13/04/2018' },
-  { position: 8, nom: 'Juliette', weight: 2725, symbol: '05/09/2018' },
+  { position: 8, nom: 'Juliette', weight: 0, symbol: '05/09/2018' },
   { position: 9, nom: 'Antoine', weight: 2220, symbol: '02/09/2019' },
   { position: 10, nom: 'Erwan', weight: 2250, symbol: '28/04/2020' },
 ];
@@ -46,7 +46,7 @@ export class CustomerListComponent implements OnInit {
   ngOnInit() {
     this.titleService.setTitle('angular-material-template - Customers');
     this.logger.log('Customers loaded');
-    this.notificationService.openSnackBar('Customers loaded');
+    this.notificationService.openSnackBar('Employes loaded');
     this.dataSource.sort = this.sort;
 
   }
